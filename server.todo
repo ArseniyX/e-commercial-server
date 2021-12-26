@@ -1,0 +1,4 @@
+create-server:
+  ✔ find api for products 23/12/21 11:25:18 @done (23/12/2021, 11:32:46)
+  ✔ create end point for list @done (23/12/2021, 13:31:51)
+  ✔ create end point for categories @done (23/12/2021, 14:00:57)
