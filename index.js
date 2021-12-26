@@ -3,7 +3,7 @@ import fetch from "node-fetch";
 import fs from "fs";
 import cors from "cors";
 const app = express();
-const port = 3001;
+const PORT = process.env.PORT || 5000;
 const API = "https://fakestoreapi.com/products";
 const PRODUCTS = "products.json";
 
@@ -43,6 +43,6 @@ app.get("/categories/", cors(), (req, resp) => {
   resp.json({ categories: uniq(categories) });
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`Example app listening at http://localhost:${PORT}`);
 });
